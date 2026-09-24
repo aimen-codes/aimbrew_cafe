@@ -64,4 +64,4 @@ Project Type: Personal Project
 
 ## 🌐 Live Demo
 
- https://aimen-codes.github.io/aimbrew-cafe/
+https://aimen-codes.github.io/aimbrew_cafe/
