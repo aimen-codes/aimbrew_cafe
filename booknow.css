@@ -1,0 +1,407 @@
+.reservation-hero {
+min-height: 55vh;
+background: url("images/aimbrew_banner.jpg") center center / cover no-repeat;
+position: relative;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+padding: 120px 20px 70px;
+}
+
+.reservation-hero-overlay {
+position: absolute;
+inset: 0;
+background: linear-gradient(
+rgba(32, 12, 10, 0.78),
+rgba(32, 12, 10, 0.60)
+);
+}
+
+.reservation-hero-content {
+position: relative;
+z-index: 2;
+max-width: 750px;
+color: var(--cream);
+}
+
+.reservation-small-title {
+display: inline-block;
+color: var(--gold);
+font-size: 12px;
+font-weight: 700;
+letter-spacing: 4px;
+margin-bottom: 15px;
+}
+
+.reservation-hero-content h1 {
+font-family: 'DM Serif Display', serif;
+font-size: clamp(42px, 6vw, 68px);
+font-weight: 400;
+line-height: 1.1;
+margin-bottom: 20px;
+}
+
+.reservation-hero-content h1 span {
+color: var(--gold);
+}
+
+.reservation-hero-content p {
+max-width: 650px;
+margin: auto;
+color: #f8eee2;
+font-size: 15px;
+line-height: 1.8;
+}
+
+/* reservation_section*/
+
+.reservation-section {
+
+padding: 100px 20px;
+background: linear-gradient(
+180deg,
+#fff8e7 0%,
+#fffdf7 100%
+);
+}
+
+.reservation-container {
+max-width: 1200px;
+margin: auto;
+}
+
+/* heading */
+
+.reservation-heading {
+text-align: center;
+margin-bottom: 55px;
+}
+
+.reservation-heading h2 {
+font-family: 'DM Serif Display', serif;
+color: var(--brown);
+font-size: clamp(38px, 5vw, 52px);
+font-weight: 400;
+margin-bottom: 10px;
+}
+
+.reservation-heading h2 span {
+color: var(--gold);
+}
+
+.reservation-heading p {
+color: var(--text);
+font-size: 14px;
+line-height: 1.7;
+}
+
+/* form + booking_information */
+
+.reservation-layout {
+display: grid;
+grid-template-columns: 1.35fr 0.85fr;
+gap: 55px;
+align-items: start;
+}
+
+/* form_card */
+
+.reservation-form-card {
+background: var(--white);
+padding: 40px;
+border-radius: 20px;
+box-shadow: 0 15px 40px rgba(61, 24, 21, 0.10);
+border: 1px solid rgba(103, 39, 34, 0.07);
+}
+
+/* form */
+
+.form-row {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 20px;
+}
+
+.form-group {
+margin-bottom: 20px;
+}
+
+.form-group label {
+display: block;
+color: var(--brown);
+font-size: 13px;
+font-weight: 600;
+margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+width: 100%;
+border: 1px solid #ded4c7;
+border-radius: 10px;
+background: #fffdf9;
+color: var(--text);
+font-family: 'Poppins', sans-serif;
+font-size: 13px;
+padding: 13px 14px;
+outline: none;
+transition: 0.3s ease;
+}
+
+.form-group input,
+.form-group select {
+height: 48px;
+}
+
+.form-group textarea {
+resize: vertical;
+min-height: 120px;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+color: #aaa09a;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+border-color: var(--gold);
+background: var(--white);
+box-shadow: 0 0 0 3px rgba(200, 149, 76, 0.12);
+}
+
+/* error */
+
+.error-message {
+display: block;
+color: #b52d24;
+font-size: 11px;
+margin-top: 5px;
+min-height: 16px;
+}
+
+/* submit_button */
+
+.reservation-submit-btn {
+width: 100%;
+border: 2px solid var(--dark-brown);
+border-radius: 30px;
+background: var(--dark-brown);
+color: var(--gold);
+padding: 14px 25px;
+font-family: 'Poppins', sans-serif;
+font-size: 14px;
+font-weight: 600;
+cursor: pointer;
+transition: 0.3s ease;
+}
+
+.reservation-submit-btn:hover {
+background: var(--gold);
+color: var(--dark-brown);
+border-color: var(--gold);
+transform: translateY(-2px);
+}
+
+.form-success {
+color: #387345;
+font-size: 12px;
+text-align: center;
+margin-top: 15px;
+min-height: 18px;
+}
+
+/* booking_information */
+
+.booking-info {
+background: var(--light-cream);
+border-radius: 20px;
+padding: 40px 35px;
+border: 1px solid rgba(103, 39, 34, 0.07);
+}
+
+.booking-info h2 {
+font-family: 'DM Serif Display', serif;
+color: var(--brown);
+font-size: 39px;
+font-weight: 400;
+line-height: 1.15;
+margin-bottom: 18px;
+}
+
+.booking-info h2 span {
+color: var(--gold);
+}
+
+.booking-intro {
+color: var(--text);
+font-size: 13px;
+line-height: 1.8;
+margin-bottom: 30px;
+}
+
+/* booking_items */
+
+.booking-item {
+display: flex;
+align-items: flex-start;
+gap: 15px;
+padding: 18px 0;
+border-bottom: 1px solid rgba(103, 39, 34, 0.12);
+}
+
+.booking-item:last-child {
+border-bottom: none;
+}
+
+.booking-icon {
+min-width: 42px;
+width: 42px;
+height: 42px;
+display: flex;
+align-items: center;
+justify-content: center;
+background: var(--brown);
+color: var(--cream);
+border-radius: 50%;
+font-size: 18px;
+}
+
+.booking-item h3 {
+color: var(--brown);
+font-size: 15px;
+font-weight: 700;
+margin-bottom: 5px;
+}
+
+.booking-item p {
+color: #777;
+font-size: 12px;
+line-height: 1.6;
+margin-bottom: 3px;
+}
+
+/* responsive */
+
+@media (max-width: 768px) {
+
+/* hero */
+
+.reservation-hero {
+    min-height: 55vh;
+    padding: 100px 18px 60px;
+}
+
+.reservation-small-title {
+    font-size: 10px;
+    letter-spacing: 3px;
+}
+
+.reservation-hero-content h1 {
+    font-size: 43px;
+}
+
+.reservation-hero-content p {
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+
+/* reservation_section */
+
+.reservation-section {
+    padding: 70px 15px;
+}
+
+.reservation-heading {
+    margin-bottom: 40px;
+}
+
+.reservation-heading h2 {
+    font-size: 39px;
+}
+
+.reservation-heading p {
+    font-size: 13px;
+}
+
+
+/* form + information */
+
+.reservation-layout {
+    grid-template-columns: 1fr;
+    gap: 25px;
+}
+
+
+/* form */
+
+.reservation-form-card {
+    padding: 25px 18px;
+    border-radius: 15px;
+}
+
+.form-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group input,
+.form-group select {
+    height: 47px;
+}
+
+.form-group textarea {
+    min-height: 110px;
+}
+
+.reservation-submit-btn {
+    padding: 13px 20px;
+    font-size: 13px;
+}
+
+
+/* booking_information */
+
+.booking-info {
+    padding: 28px 20px;
+    border-radius: 15px;
+}
+
+.booking-info h2 {
+    font-size: 34px;
+}
+
+.booking-intro {
+    font-size: 12px;
+}
+
+.booking-item {
+    gap: 12px;
+    padding: 15px 0;
+}
+
+.booking-icon {
+    min-width: 38px;
+    width: 38px;
+    height: 38px;
+    font-size: 16px;
+}
+
+.booking-item h3 {
+    font-size: 14px;
+}
+
+.booking-item p {
+    font-size: 11px;
+}
+
+
+}
